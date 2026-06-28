@@ -23,7 +23,7 @@ jobs:
     
     - name: Start SUT
       run: |
-        java -jar artifacts/app-replan-delivery.jar &
+        java -jar artifacts/app-ibank.jar -P:profile=test &
         sleep 10
     
     - name: Run tests
